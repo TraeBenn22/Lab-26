@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Footer from '../Components/footer';
 import Header from '../Components/header';
-import App from '../Components/app.scss';
+import './style.scss';
 
 class Counter extends React.Component {
     constructor(props) {
@@ -21,20 +21,20 @@ class Counter extends React.Component {
 
     handlerDecrease = e => {
         e.preventDefault();
-      this.setState(previousState => ({
-          counter: previousState.counter - 1,
-      }))
+        this.setState(previousState => ({
+            counter: previousState.counter - 1,
+        }))
     };
 
 
     render() {
         return (
             <div>
-            <h4>{this.state.counter}</h4>
-                <button onClick={this.handlerDecrease}>Decrease</button>
-            <button onClick={this.handleButtonClick}>Click Me</button>
-        </div>
-    );
+                <h4 style={{color: 'red'}}>{this.state.counter}</h4>
+                <button style={{color: 'red'}} onClick={this.handlerDecrease}>Decrease</button>
+                <button style={{color: 'red'}} onClick={this.handleButtonClick}>Click Me</button>
+            </div>
+        );
     }
 }
 
@@ -42,12 +42,14 @@ class App extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <Header />
-            <Counter />
-            <Footer />
+                <Header />
+                <Counter />
+                <Footer />
             </React.Fragment>
-    );
+        );
     }
+
 }
 
-export default App;
+
+export default App;ult App;

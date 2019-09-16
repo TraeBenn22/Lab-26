@@ -1,0 +1,17 @@
+
+$backgroundColor: blue;
+$headerColor: grey;
+$primary-color: #282c34;
+$secondary-color: #61dafb;
+
+Header {
+  background-color: $headerColor;
+}
+
+body {
+  background-color: $backgroundColor;
+}
+
+Footer {
+  color: $headerColor;
+}
