@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import Footer from '../Components/footer';
 import Header from '../Components/header';
 import './style.scss';
@@ -52,4 +51,4 @@ class App extends React.Component {
 }
 
 
-export default App;ult App;
+export default App;
