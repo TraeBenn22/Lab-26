@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/TraeBenn22/Lab-26#readme",
   "dependencies": {
-    "react": "^16.9.0"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }
